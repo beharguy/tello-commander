@@ -1,0 +1,86 @@
+* {
+  font-size: 14px;
+}
+.app {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  box-sizing: border-box;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+}
+.header .header-title {
+  margin-left: 10px;
+  flex: 1;
+}
+
+.battery {
+  border: solid 1px #2c3e50;
+  width: 50px;
+  height: 15px;
+  position: relative;
+}
+.battery-progress {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  bottom: 0px;
+  width: 50%;
+}
+.battery-progress.green {
+  background-color: #27ae60;
+}
+.battery-progress.red {
+  background-color: #c0392b;
+}
+
+.workspace {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+}
+
+.position-tracker {
+  display: flex;
+  flex-direction: column;
+}
+.position-tracker .position-tracker-body {
+  border: solid 1px #2c3e50;
+  width: 50px;
+  flex: 1;
+  background: #eeeeee;
+  position: relative;
+  overflow: hidden;
+}
+.position-tracker .position-tracker-body .drone-pointer {
+  width: 20px;
+  height: 20px;
+  background: #aaaaaa;
+  border-radius: 50%;
+  transform: translateX(-50%) translateY(50%);
+  position: absolute;
+  left: 50%;
+  bottom: 0px;
+}
+
+.code-area {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  margin-left: 10px;
+}
+.code {
+  flex: 1;
+  direction: rtl;
+  padding: 5px;
+}
+
+.commands {
+  display: flex;
+  flex-direction: row;
+}
